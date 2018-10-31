@@ -70,6 +70,7 @@ mod contextitems;
 mod handler;
 mod stream;
 mod supervisor;
+mod watch;
 mod system;
 
 mod address;
@@ -95,6 +96,7 @@ pub use handler::{
 pub use registry::{ArbiterService, Registry, SystemRegistry, SystemService};
 pub use stream::StreamHandler;
 pub use supervisor::Supervisor;
+pub use watch::{WatchEvent,Watcher};
 pub use sync::{SyncArbiter, SyncContext};
 pub use system::{System, SystemRunner};
 
@@ -128,6 +130,7 @@ pub mod prelude {
     pub use registry::{ArbiterService, SystemService};
     pub use stream::StreamHandler;
     pub use supervisor::Supervisor;
+    pub use watch::{WatchEvent,Watcher};
     pub use sync::{SyncArbiter, SyncContext};
     pub use system::System;
 
